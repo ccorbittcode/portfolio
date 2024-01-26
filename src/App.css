@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #555252;
+  margin: 0;
+}
+
+.navlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border: 3px solid grey;
+  background-color: #333;
+
+
+}
+
+.navlist li {
+  float: right;
+  border-left: 1px solid #bbb;
+  background-color: #333;
+}
+
+.navlist li:last-child {
+  border-left: none;
+}
+.navlist li:first-child {
+  border: none;
+  float: left;
+}
+
+.navlink {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-family: monospace;
+  background-color: #333;
+}
+
+.navlink:hover {
+  background-color: #111;
+  transition: 1s ease-out;
+}
+
+.navicon {
+  width: 12px;
+  padding: none;
+  margin: none;
+  background-color: #333;
+}
+
+.active {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-family: monospace;
+  background-color: #04AA6D;
+}
+
+.outlet {
+  margin-top: 40px;
+  background-color:cadetblue;
+  padding: 3%;
+  font-family: monospace;
+  min-height: 87.2vh;
+}
+
+.outlet h1 {
+  text-align: center;
+}
+
+.aboutheader {
+  text-align: center;
+  font-family: monospace;
+  font-size: x-large;
+  max-width: 70%;
+  margin: auto;
+}
+
+.aboutsection {
+  text-align: center;
+  font-family: monospace;
+  max-width: 50%;
+  margin: auto;
+}
+
+.footer {
+  font-family: monospace;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 0px;
+  border: 3px solid grey;
+}
+
+input {
+  font-family: monospace;
+}
+
+::placeholder {
+  font-family: monospace;
+}
+
+.smallformelement {
+  width: 47%;
+  margin: 0.5vw;
+  padding: 0.8vw;
+}
+
+.midformelement {
+  width: 96%;
+  margin: 0.5vw;
+  padding: 0.8vw;
+}
+
+.largeformelement {
+  width: 96%;
+  margin: 0.5vw;
+  padding: 0.8vw;
+}
+
+.submitbutton {
+  width: 30%;
+  margin: 0.35vw;
+  padding: 0.6vw;
+  font-family: monospace;
+  background-color:#333;
+  color: white;
+  border-radius: 15px;
+}
+
+.contactform {
+  width:50%;
+  margin: auto;
+}
+
+/* CSS for screens smaller than 720px */
+@media only screen and (max-width: 720px) {
+  .smallformelement {
+    width: 100%;
+    margin: 1vw;
+    padding: 1.5vw;
+    margin-left: 0;
+  }
+
+  .midformelement {
+    width: 100%;
+    margin: 1vw;
+    padding: 1.5vw;
+    margin-left: 0;
+  }
+
+  .largeformelement {
+    width: 100%;
+    margin: 1vw;
+    padding: 1.5vw;
+    margin-left: 0;
+  }
+
+  .submitbutton {
+    width: 100%;
+    margin: 0.35vw;
+    padding: 1.5vw;
+    font-family: monospace;
+    background-color:#333;
+    color: white;
+    border-radius: 15px;
+    margin-left: 0;
+  }
+
+  .contactform {
+    width:70%;
+    margin: auto;
+  }
+}
+
+
+/* CSS for screens larger than 720px */
+@media only screen and (min-width:721px) and (max-width: 1024px) {
+  .smallformelement {
+    width: 47.23%;
+    margin: 0.6vw;
+    padding: 1.5vw;
+  }
+
+  .midformelement {
+    width: 96%;
+    margin: 0.6vw;
+    padding: 1.5vw;
+  }
+
+  .largeformelement {
+    width: 96%;
+    margin: 0.6vw;
+    padding: 1.5vw;
+  }
+
+  .submitbutton {
+    width: 30%;
+    margin: 0.35vw;
+    padding: 1.5vw;
+    font-family: monospace;
+    background-color:#333;
+    color: white;
+    border-radius: 15px;
+  }
+
+  .contactform {
+    width:80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (min-width:1025px) {
+  .smallformelement {
+    width: 47%;
+    margin: 0.5vw;
+    padding: 1vw;
+  }
+
+  .midformelement {
+    width: 96%;
+    margin: 0.5vw;
+    padding: 1vw;
+  }
+
+  .largeformelement {
+    width: 96%;
+    margin: 0.5vw;
+    padding: 1vw;
+  }
+
+  .submitbutton {
+    width: 30%;
+    margin: 0.35vw;
+    padding: 1vw;
+    font-family: monospace;
+    background-color:#333;
+    color: white;
+    border-radius: 15px;
+  }
+
+  .contactform {
+    width:60%;
+    margin: auto;
+  }
+}
+
+.experience {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: monospace;
+}
+
+.card {
+  border: 5px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card h2 {
+  margin: 0 0 10px 0;
+}
+
+.card h3 {
+  margin: 0 0 20px 0;
+  color: #e2a010;
+}
+
+.card p {
+  margin: 0;
+}
+
+.contactme {
+  text-align: center;
+}
+
+.contactlist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+}
+
+.contactlinks {
+  text-decoration: none;
+  color: #e2a010;
+  font-size: large;
+}
+
+.contacticon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+}
