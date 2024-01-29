@@ -2,14 +2,16 @@ import Navbar from './Navbar'
 import { Outlet } from 'react-router-dom'
 import Footer from './Footer'
 import PageTransitionWrapper from './PageTransitionWrapper.jsx';
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence } from 'framer-motion'
 
-export default function Layout() {
+export default function Layout({ location }) {
 
     return (
         <>
             <Navbar />
-            <Outlet />
+            <PageTransitionWrapper location={location}>
+                <Outlet />
+            </PageTransitionWrapper>
             <Footer />
         </>
     )

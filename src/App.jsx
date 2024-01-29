@@ -7,50 +7,37 @@ import Projects from './pages/Projects.jsx'
 import ErrorPage from './pages/ErrorPage.jsx'
 import Home from './pages/Home.jsx'
 import Layout from './Layout.jsx'
-import PageTransitionWrapper from './PageTransitionWrapper.jsx'
-import {
-  createBrowserRouter,
-  RouterProvider
-} from "react-router-dom"
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    errorElement: <ErrorPage />,
-    children: [
-      {
-        path: "/",
-        element: <PageTransitionWrapper><Home /></PageTransitionWrapper>,
-      },
-      {
-        path: "/about",
-        element: <PageTransitionWrapper><About /></PageTransitionWrapper>,
-      },
-      {
-        path: "/projects",
-        element: <PageTransitionWrapper><Projects /></PageTransitionWrapper>,
-      },
-      {
-        path: "/experience",
-        element: <PageTransitionWrapper><Experience /></PageTransitionWrapper>,
-      },
-      {
-        path: "/contact",
-        element: <PageTransitionWrapper><Contact /></PageTransitionWrapper>,
-      },
-    ]
-  },
-
-]);
+import { useLocation } from 'react-router-dom'
+import { AnimatePresence } from 'framer-motion'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
+  return (
+    <Router>
+      <RoutesWithTransition />
+    </Router>
+  );
+}
+
+function RoutesWithTransition() {
+  const location = useLocation();
 
   return (
-    <>
-          <RouterProvider router={router} />
-    </>
-  )
+
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Layout location={location} />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="projects" element={<Projects />} />
+          <Route path="experience" element={<Experience />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+        <Route path="*" element={<ErrorPage />} />
+      </Routes>
+    </AnimatePresence>
+
+  );
 }
 
 export default App
