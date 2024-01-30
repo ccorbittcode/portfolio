@@ -30,7 +30,7 @@ const Experience = () => {
 
     return (
         <div className="outlet">
-            <h1>Relevant Experience</h1>
+            <h1>Relevant Work Experience</h1>
             <div className="experience">
                 {experiences.map((experience, index) => (
                     <Card key={index} {...experience} />
