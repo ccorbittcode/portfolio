@@ -85,6 +85,9 @@ body {
   max-width: 70%;
   margin: auto;
 }
+.aboutheader h1 {
+  margin-bottom: 40px;
+}
 
 .aboutsection {
   text-align: center;
@@ -325,4 +328,41 @@ input {
   position: fixed;
   top: 35%;
   left: 42.5%;
+}
+
+.project-card {
+  border: 5px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 100px auto;
+  width: 300px;
+  height: 300px;
+}
+
+.project-card h2 {
+  margin: 0 0 20px 0;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+
+.self-photo {
+  width: 67%;
+}
+
+.photo-div {
+  width: 100%;
+  margin: auto;
+  text-align: right;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
 }
