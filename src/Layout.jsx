@@ -4,12 +4,12 @@ import Footer from './Footer'
 import PageTransitionWrapper from './PageTransitionWrapper.jsx';
 import { AnimatePresence } from 'framer-motion'
 
-export default function Layout({ location }) {
+export default function Layout({ location, isInitialRender }) {
 
     return (
         <>
             <Navbar />
-            <PageTransitionWrapper location={location}>
+            <PageTransitionWrapper isInitialRender={isInitialRender} location={location}>
                 <Outlet />
             </PageTransitionWrapper>
             <Footer />
