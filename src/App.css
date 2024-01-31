@@ -335,12 +335,34 @@ input {
   border-radius: 10px;
   padding: 20px;
   margin: 100px auto;
-  width: 300px;
-  height: 300px;
+  width: 70%;
+  height: 25rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .project-card h2 {
   margin: 0 0 20px 0;
+}
+
+.project-card img {
+  width: 20rem;
+  height: auto;
+}
+
+.card-content {
+  flex: 1;
+  margin-left: 10%;
+  margin-top: 7%;
+}
+
+.tech-list {
+  display: flex;
+  gap: 20px; /* Adjust as needed */
 }
 
 .fade-in {

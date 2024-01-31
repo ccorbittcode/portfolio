@@ -5,7 +5,7 @@ export default function Navbar() {
             <nav className="navbar">
                 <ul className="navlist">
                     <li>
-                        <NavLink to="/" className={(navData) => (navData.isActive ? 'active' : 'navlink')} ><img src="/public/kirbyclout.png" className="navicon"/></NavLink>
+                        <NavLink to="/" className={(navData) => (navData.isActive ? 'active' : 'navlink')} ><img src="/kirbyclout.png" className="navicon"/></NavLink>
                     </li>
                     <li>
                         <NavLink to="/contact" className={(navData) => (navData.isActive ? 'active' : 'navlink')} >Contact</NavLink>
