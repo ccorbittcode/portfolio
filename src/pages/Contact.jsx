@@ -10,9 +10,9 @@ const Contact = () => {
                     Or, reach out to me here:
                 </h3>
                 <div className="contactlist">
-                    <img className="contacticon" src="/twittericon.png" alt="" />
-                    <img className="contacticon" src="/linkedinicon.png" alt="" />
-                    <img className="contacticon" src="/emailicon.png" alt="" />
+                    <img className="contacticon" src="../public/twittericon.png" alt="" />
+                    <img className="contacticon" src="../public/linkedinicon.png" alt="" />
+                    <img className="contacticon" src="../public/emailicon.png" alt="" />
                 </div>
                 <div className="contactlist">
                     <a className="contactlinks" href="https://twitter.com/ChaseCorbi5584">Twitter</a>
