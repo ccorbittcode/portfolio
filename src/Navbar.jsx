@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-import kirbyclout from '../public/kirbyclout.png'
+import kirbyclout from '../kirbyclout.png'
 
 export default function Navbar() {
     return (
