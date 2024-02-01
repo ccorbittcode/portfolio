@@ -58,7 +58,7 @@ const Projects = () => {
                     </ul>
                 </div>
                 <div>
-                    <img src="../public/self-photo.png" alt="Chase" className="self-photo" />
+                    <img src="/portfolio/self-photo.png" alt="Chase" className="self-photo" />
                 </div>
             </ProjectCard>
             <ProjectCard slideInFromRight={true}>

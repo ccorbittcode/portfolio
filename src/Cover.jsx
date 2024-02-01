@@ -28,7 +28,7 @@ export default function Cover() {
       style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', background: 'black', zIndex: 100 }}
     >
       <motion.img
-        src="../public/kirbyclout.png"
+        src="/portfolio/kirbyclout.png"
         className="covericon"
         initial={{ opacity: 0 }}
         animate={{ opacity: isContentVisible ? 1 : 0 }}

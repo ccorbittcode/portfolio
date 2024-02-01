@@ -23,7 +23,7 @@ const Home = () => {
                         </p>
                     </div>
                     <div className="photo-div">
-                        <img src="/self-photo.png" alt="Chase" className="self-photo" />
+                        <img src="/portfolio/self-photo.png" alt="Chase" className="self-photo" />
                     </div>
                 </div>
             </div>
