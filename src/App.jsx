@@ -35,12 +35,12 @@ function RoutesWithTransition() {
 
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-        <Route path="portfolio" element={<Layout location={location} isInitialRender={isInitialRender} />}>
+        <Route path="/portfolio" element={<Layout location={location} isInitialRender={isInitialRender} />}>
           <Route index element={<Home />} />
-          <Route path="portfolio/about" element={<About />} />
-          <Route path="portfolio/projects" element={<Projects />} />
-          <Route path="portfolio/experience" element={<Experience />} />
-          <Route path="portfolio/contact" element={<Contact />} />
+          <Route path="/portfolio/about" element={<About />} />
+          <Route path="/portfolio/projects" element={<Projects />} />
+          <Route path="/portfolio/experience" element={<Experience />} />
+          <Route path="/portfolio/contact" element={<Contact />} />
         </Route>
         <Route path="*" element={<ErrorPage />} />
       </Routes>
