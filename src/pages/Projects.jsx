@@ -82,7 +82,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div>
-                    <img src="../public/self-photo.png" alt="Chase" className="self-photo" />
+                    <img src="/portfolio/self-photo.png" alt="Chase" className="self-photo" />
                 </div>
             </ProjectCard>
             <ProjectCard slideInFromRight={false}>
@@ -104,7 +104,7 @@ const Projects = () => {
                     </div>
                 </div>
                 <div>
-                    <img src="../public/self-photo.png" alt="Chase" className="self-photo" />
+                    <img src="/portfolio/self-photo.png" alt="Chase" className="self-photo" />
                 </div>
             </ProjectCard>
             <h2 style={{textAlign: "center"}}>And more to come....</h2>
